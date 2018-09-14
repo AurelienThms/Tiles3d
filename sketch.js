@@ -1,11 +1,11 @@
 let squares = [];
-let scl = 30;
+let scl = window.innerWidth/50;
 let angle = 0;
 let lignes = window.innerHeight / scl;
 let collones = window.innerWidth / scl;
 
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight, WEBGL);
+    createCanvas(windowWidth, windowHeight, WEBGL);
     pointLight(255,255,255,-windowWidth/2,-windowHeight/2,-300);
     pointLight(255,255,255,windowWidth/2,-windowHeight/2,-300);
     pointLight(255,255,255,-windowWidth/2,windowHeight/2,-300);
@@ -15,7 +15,12 @@ function setup() {
     pointLight(255,255,255,-windowWidth/2,windowHeight/2,-300);
     pointLight(255,255,255,windowWidth/2,windowHeight/2,-300);
     pointLight(255,255,255,0,0,-300);
-    }
+
+
+
+
+
+}
 
 function draw() {
     //ortho();
@@ -29,9 +34,9 @@ function draw() {
 }
 
 function create() {
-    for (let i = 0; i < lignes+10 ; i++) {
-        for (let x = 0; x < collones+10 ; x++) {
-            specularMaterial(20,20,20);
+    for (let i = 0; i < lignes+1 ; i++) {
+        for (let x = 0; x < collones+1 ; x++) {
+            specularMaterial(10,10,10);
             strokeWeight(2);
             stroke(255);
             noStroke();
@@ -42,7 +47,7 @@ function create() {
             rotateX(-angleY);
             translate(scl*(Math.sqrt(2)), 0);
         }
-        translate(-collones*(scl*(Math.sqrt(2)))-21*(scl*(Math.sqrt(2))/2),scl);
+        translate(-collones*(scl*(Math.sqrt(2)))-3*(scl*(Math.sqrt(2))/2),scl);
     }
 }
 
