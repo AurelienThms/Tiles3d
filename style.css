@@ -1,0 +1,48 @@
+body {
+    /*background-image: linear-gradient(to right, deeppink , deepskyblue);}*/
+    background-color: rgb(255, 40, 40);
+    overflow: hidden;
+}
+
+h1 {
+    color: white;
+    font-family: "aliens and cows";
+    letter-spacing: 60px;
+    font-size: 8em;
+    display: block;
+    z-index: 3;
+    position: absolute;
+    top: 37vh;
+    width: 100vw;
+    text-align: center;
+}
+
+#sliderX, #sliderY, #sliderZ {
+    width: 1000px;
+    display: block;
+    z-index: 3;
+    position: absolute;
+}
+
+#sliderX {
+    top: 10vh;
+}
+
+#sliderY {
+    top: 20vh
+}
+
+#sliderZ {
+    top: 30vh;
+}
+
+#defaultCanvas0 {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
