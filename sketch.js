@@ -5,7 +5,7 @@ let lignes = window.innerHeight / scl;
 let collones = window.innerWidth / scl;
 
 function setup() {
-    createCanvas(windowWidth, windowHeight, WEBGL);
+    createCanvas(window.innerWidth, window.innerHeight, WEBGL);
     pointLight(255,255,255,-windowWidth/2,-windowHeight/2,-300);
     pointLight(255,255,255,windowWidth/2,-windowHeight/2,-300);
     pointLight(255,255,255,-windowWidth/2,windowHeight/2,-300);
@@ -15,13 +15,7 @@ function setup() {
     pointLight(255,255,255,-windowWidth/2,windowHeight/2,-300);
     pointLight(255,255,255,windowWidth/2,windowHeight/2,-300);
     pointLight(255,255,255,0,0,-300);
-    
-
-
-
-
-
-}
+    }
 
 function draw() {
     //ortho();
