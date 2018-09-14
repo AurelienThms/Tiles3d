@@ -2,6 +2,8 @@ body {
     /*background-image: linear-gradient(to right, deeppink , deepskyblue);}*/
     background-color: rgb(255, 40, 40);
     overflow: hidden;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1 {
